@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bills Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rajshree Product BillBook/GST System</h1>
+        <div class="form">
+
+            <form id="billForm">
+                <h3>Fill Bill Details</h3>
+                <div class="details">
+                    <input type="text" id="billNo" placeholder="Bill No." required>
+                    <input type="text" id="date" placeholder="Date" required>
+                    <input type="text" id="gstNo" placeholder="GST No." required>
+                    <input type="text" id="customerName" placeholder="Customer Name" required>
+                    <input type="text" id="customerAddress" placeholder="Customer Address" required>
+                    <input type="text" id="ProductDetail" placeholder="Product Detail" required>
+                    <input type="text" id="orderId" placeholder="Order Quantity" required>
+                </div>
+                <div class="amount">
+                    <h3>Order Amount</h3>
+                    <input type="number" id="saleMoney" placeholder="Amount" required>
+                    <input type="number" id="cgst" placeholder="CGST" required>
+                    <input type="number" id="sgst" placeholder="SGST" required>
+                    <input type="number" id="totalMoney" placeholder="Total Money" required>
+                    <input type="text" id="signature" placeholder="Signature" required>
+                </div>
+                <div class="add-bill">
+                    <button type="submit" class="addbtn">Add Bill</button>
+                </div>
+            </form>
+        </div>
+        <table id="billTable">
+            <thead>
+                <tr>
+                    <th>Bill No.</th>
+                    <th>Date</th>
+                    <th>GST No.</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Product Detail</th>
+                    <th>Order Quantity</th>
+                    <th>Amount</th>
+                    <th>CGST</th>
+                    <th>SGST</th>
+                    <th>Total Amount</th>
+                    <th>Signature</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="billList"></tbody>
+        </table>
+
+        <button id="downloadAllBtn">Download All Bills</button>
+    </div>
+    <div class="footer">
+        <center>
+            <p>This is Rajshree Products personal billing system designed and built by Dev Aryan jain for easy making of
+                gst and biils for his fathers company. All rights Reserved ©️RajshreeProducts and ©️AryanJain</p>
+        </center>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
